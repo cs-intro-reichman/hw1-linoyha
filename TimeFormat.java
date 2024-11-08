@@ -14,11 +14,12 @@ public class TimeFormat {
 			hours = hours -12;
 			System.out.println(hours +":" +minute + " PM");
 		}
-		else {
-			System.out.println(hours+ ":"+minute + " AM");
-		}
+		if (hours==12) {
+				System.out.println(hours +":" +minute + " PM");
+			}
+			else {
+					System.out.println(hours+ ":"+minute + " AM");
 
-		
-		
+				}
+			}
 	}
-}
